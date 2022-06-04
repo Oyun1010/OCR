@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+body {
+  font-family: sans-serif;
+  background-image: url("image/4884451.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 930px;
+}
+
+.App {
+  position: relative;
+  top: 5.5em;
+  width: 900px;
+  height: 580px;
+  border-style: dashed;
+  margin: 0 auto;
+  border-style: groove;
+  border-radius: 25px;
+  background-color: #c9c1c157;
+}
+
+.App h2 {
+  font-size: 3rem;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.893);
+  font-family: 'Grand Hotel';
+}
+
+.App p {
+  color: #1a1a11;
+  font-size: 1.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+
+.result {
+  margin-top: -1em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.result .box-image {
+  border-style: dashed;
+  border-color: #f9f9f9;
+  border-width: 2px;
+  height: 430px;
+  width: 400px;
+  padding: 0.2rem;
+  margin-left: 1em;
+}
+
+.result .box-p {
+  background: rgba(250, 250, 250, 0.803);
+  height: 430px;
+  width: 400px;
+  padding: 0.2rem;
+  border-style: double;
+  border-width: 0.3em;
+}
+
+.result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.result p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#upload {
+  margin-left: 46rem;
+  margin-top: 0.8em;
+  color: transparent;
+}
+#upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#upload::before {
+  content: 'Upload file';
+  color: rgb(252, 252, 252);
+  display: inline-block;
+  background: -webkit-linear-gradient(#9290e3d5, #9386a9);
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 25px;
+  width: 120px;
+  cursor: pointer; 
+  font-weight: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#upload:hover::before {
+  border-color: black;
+}
+#upload:active {
+  outline: 0;
+}
+#upload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+@media (min-width: 1000px) {
+  .result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
